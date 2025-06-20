@@ -10,6 +10,20 @@
 // Asegúrate de incluir la librería emailjs en tu HTML
 emailjs.init("TU_USER_ID"); // lo obtienes al registrarte
 
+document.getElementById('form').addEventListener('submit', function(e) {
+  e.preventDefault();
+  
+  emailjs.sendForm('TU_SERVICE_ID', 'TU_TEMPLATE_ID', this)
+    .then(() => {
+      alert('Correo enviado correctamente');
+    }, (err) => {
+      alert('Error al enviar: ' + JSON.stringify(err));
+    });
+});
+
+
+// Animaciones con Intersection Observer
+// Asegúrate de incluir Animate.css en tu HTML
 document.addEventListener("DOMContentLoaded", function () {
   const observer_izq = new IntersectionObserver(entries => {
     entries.forEach(entry => {
