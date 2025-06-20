@@ -6,22 +6,6 @@
 // This file is intentionally blank
 // Use this file to add JavaScript to your project
 
-// Inicializar EmailJS
-// Asegúrate de incluir la librería emailjs en tu HTML
-emailjs.init("gpP5Boi_O2_0TUcx6"); // lo obtienes al registrarte
-
-document.getElementById('form').addEventListener('submit', function(e) {
-  e.preventDefault();
-  
-  emailjs.sendForm('service_vp5jbyc', 'template_jmyrc0s', this)
-    .then(() => {
-      alert('Correo enviado correctamente');
-    }, (err) => {
-      alert('Error al enviar: ' + JSON.stringify(err));
-    });
-});
-
-
 // Animaciones con Intersection Observer
 // Asegúrate de incluir Animate.css en tu HTML
 document.addEventListener("DOMContentLoaded", function () {
