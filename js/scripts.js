@@ -6,6 +6,10 @@
 // This file is intentionally blank
 // Use this file to add JavaScript to your project
 
+// Inicializar EmailJS
+// Asegúrate de incluir la librería emailjs en tu HTML
+emailjs.init("TU_USER_ID"); // lo obtienes al registrarte
+
 document.addEventListener("DOMContentLoaded", function () {
   const observer_izq = new IntersectionObserver(entries => {
     entries.forEach(entry => {
