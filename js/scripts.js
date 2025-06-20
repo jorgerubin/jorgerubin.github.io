@@ -8,12 +8,12 @@
 
 // Inicializar EmailJS
 // Asegúrate de incluir la librería emailjs en tu HTML
-emailjs.init("TU_USER_ID"); // lo obtienes al registrarte
+emailjs.init("gpP5Boi_O2_0TUcx6"); // lo obtienes al registrarte
 
 document.getElementById('form').addEventListener('submit', function(e) {
   e.preventDefault();
   
-  emailjs.sendForm('TU_SERVICE_ID', 'TU_TEMPLATE_ID', this)
+  emailjs.sendForm('service_vp5jbyc', 'template_jmyrc0s', this)
     .then(() => {
       alert('Correo enviado correctamente');
     }, (err) => {
