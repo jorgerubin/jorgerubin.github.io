@@ -6,6 +6,26 @@
 // This file is intentionally blank
 // Use this file to add JavaScript to your project
 
+function validateForm() {
+  const name = document.getElementById("name").value;
+  const email = document.getElementById("email").value;
+  const phone = document.getElementById("phone").value;
+
+  if (name && email && phone) {
+    enableSubmitButton();
+  } else {
+    disableSubmitButton();
+  }
+}
+
+function enableSubmitButton() {
+  document.getElementById("submitButton").classList.remove("disabled");
+}
+function disableSubmitButton() {
+  document.getElementById("submitButton").classList.add("disabled");
+}
+
+
 // Animaciones con Intersection Observer
 // Asegúrate de incluir Animate.css en tu HTML
 document.addEventListener("DOMContentLoaded", function () {
